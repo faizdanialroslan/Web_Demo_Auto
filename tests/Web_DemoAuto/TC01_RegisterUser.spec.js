@@ -62,7 +62,7 @@ test('Register User', async ({ page }) => {
   await expect(page.locator('a:has-text("Logged in as TestAuto001")')).toBeVisible();
 
   // Add a wait to ensure account creation is fully processed before other tests run
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(1000);
 
   // Do NOT delete the account here.
   // This allows other tests (TC02, TC04) to use the same account for login/logout.

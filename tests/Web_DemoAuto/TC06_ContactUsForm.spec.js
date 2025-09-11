@@ -30,7 +30,7 @@ test('Contact Us Form', async ({ page }) => {
     throw new Error(`Cannot read file: ${filePath}. Check permissions.`);
   }
   await page.locator('input[name="upload_file"]').setInputFiles(filePath);
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(2000);
 
 
   //Handle alert (accept dialog)
