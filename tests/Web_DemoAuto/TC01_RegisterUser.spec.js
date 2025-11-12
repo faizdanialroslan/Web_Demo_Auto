@@ -67,3 +67,6 @@ test('Register User', async ({ page }) => {
   // Do NOT delete the account here.
   // This allows other tests (TC02, TC04) to use the same account for login/logout.
 });
+
+
+//TO BE EDITED

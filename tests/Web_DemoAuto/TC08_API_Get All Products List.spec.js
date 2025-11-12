@@ -10,3 +10,4 @@ test('API 1: Get All Products List', async ({ request }) => {
   // Optionally, assert products list is present
   expect(data).toHaveProperty('products');
 });
+ 
