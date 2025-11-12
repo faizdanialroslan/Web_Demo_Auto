@@ -2,11 +2,25 @@
   "name": "playwrightautomation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "test:web": "playwright test tests/Web_DemoAuto --project=chromium",
+    "report": "playwright show-report",
+    "test:debug": "playwright test --debug"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Playwright automation testing project",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.2.0"
